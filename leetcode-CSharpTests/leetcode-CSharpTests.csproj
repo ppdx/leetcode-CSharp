@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="AddTwoNumbersTests.cs" />
     <Compile Include="GenerateParenthesesTests.cs" />
+    <Compile Include="ImplementStrStrTests.cs" />
     <Compile Include="LengthOfLongestSubstringTests.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberTests.cs" />
     <Compile Include="LongestPalindromicSubstringTests.cs" />
