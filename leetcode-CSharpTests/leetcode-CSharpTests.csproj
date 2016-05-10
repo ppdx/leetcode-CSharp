@@ -69,6 +69,7 @@
     <Compile Include="ReverseIntegerTests.cs" />
     <Compile Include="ReverseNodesInKGroupTests.cs" />
     <Compile Include="StringToIntegerAtoiTests.cs" />
+    <Compile Include="SubstringWithConcatenationOfAllWordsTests.cs" />
     <Compile Include="SwapNodesInPairsTests.cs" />
     <Compile Include="TwoSumTests.cs" />
     <Compile Include="ValidParenthesesTests.cs" />
