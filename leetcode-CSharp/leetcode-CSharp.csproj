@@ -57,6 +57,7 @@
     <Compile Include="ListNode.cs" />
     <Compile Include="Longest Common Prefix.cs" />
     <Compile Include="Longest Palindromic Substring.cs" />
+    <Compile Include="Longest Valid Parentheses.cs" />
     <Compile Include="Median Of Two Sorted Arrays.cs" />
     <Compile Include="Merge k Sorted Lists.cs" />
     <Compile Include="Merge Two Sorted Lists.cs" />
