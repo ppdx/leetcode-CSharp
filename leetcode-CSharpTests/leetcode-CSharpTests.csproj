@@ -79,6 +79,7 @@
     <Compile Include="TwoSumTests.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="ValidParenthesesTests.cs" />
+    <Compile Include="ValidSudokuTests.cs" />
     <Compile Include="ZigZagConversionTests.cs" />
     <Compile Include="_3SumTests.cs" />
   </ItemGroup>

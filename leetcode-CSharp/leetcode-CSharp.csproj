@@ -80,6 +80,7 @@
     <Compile Include="Swap Nodes in Pairs.cs" />
     <Compile Include="Two Sum.cs" />
     <Compile Include="Valid Parentheses.cs" />
+    <Compile Include="Valid Sudoku.cs" />
     <Compile Include="ZigZag Conversion.cs" />
   </ItemGroup>
   <ItemGroup>
