@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AddTwoNumbersTests.cs" />
+    <Compile Include="CountAndSaySolutionTests.cs" />
     <Compile Include="DivideTwoIntegersTests.cs" />
     <Compile Include="GenerateParenthesesTests.cs" />
     <Compile Include="ImplementStrStrTests.cs" />
