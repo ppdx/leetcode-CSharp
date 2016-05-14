@@ -74,6 +74,7 @@
     <Compile Include="Roman to Integer.cs" />
     <Compile Include="Search for a Range.cs" />
     <Compile Include="Search in Rotated Sorted Array.cs" />
+    <Compile Include="Search Insert Position.cs" />
     <Compile Include="String to Integer %28atoi%29.cs" />
     <Compile Include="Substring with Concatenation of All Words.cs" />
     <Compile Include="Swap Nodes in Pairs.cs" />
