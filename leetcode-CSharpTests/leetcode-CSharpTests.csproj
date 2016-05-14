@@ -75,6 +75,7 @@
     <Compile Include="SearchInsertPositionTests.cs" />
     <Compile Include="StringToIntegerAtoiTests.cs" />
     <Compile Include="SubstringWithConcatenationOfAllWordsTests.cs" />
+    <Compile Include="SudokuSolverTests.cs" />
     <Compile Include="SwapNodesInPairsTests.cs" />
     <Compile Include="TwoSumTests.cs" />
     <Compile Include="Utility.cs" />

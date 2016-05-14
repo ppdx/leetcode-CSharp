@@ -19,7 +19,7 @@ namespace leetcode_CSharp.Tests
 
         }
 
-        private char[,] SudokuBuilder(string s)
+        public char[,] SudokuBuilder(string s)
         {
             var rows = s.Split(' ', '\n', '\t');
             Assert.AreEqual(9, rows.Length);
