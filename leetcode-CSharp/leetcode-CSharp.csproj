@@ -47,6 +47,7 @@
     <Compile Include="3Sum.cs" />
     <Compile Include="4Sum.cs" />
     <Compile Include="Add Two Numbers.cs" />
+    <Compile Include="Combination Sum.cs" />
     <Compile Include="Container With Most Water.cs" />
     <Compile Include="Count and Say Solution.cs" />
     <Compile Include="Divide Two Integers.cs" />
