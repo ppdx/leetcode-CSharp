@@ -55,6 +55,7 @@
     <Compile Include="CombinationSumSolutionTests.cs" />
     <Compile Include="CountAndSaySolutionTests.cs" />
     <Compile Include="DivideTwoIntegersTests.cs" />
+    <Compile Include="FirstMissingPositiveSolutionTests.cs" />
     <Compile Include="GenerateParenthesesTests.cs" />
     <Compile Include="ImplementStrStrTests.cs" />
     <Compile Include="LengthOfLongestSubstringTests.cs" />
