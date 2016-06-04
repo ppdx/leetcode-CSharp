@@ -82,6 +82,7 @@
     <Compile Include="Substring with Concatenation of All Words.cs" />
     <Compile Include="Sudoku Solver.cs" />
     <Compile Include="Swap Nodes in Pairs.cs" />
+    <Compile Include="Trapping Rain Water.cs" />
     <Compile Include="Two Sum.cs" />
     <Compile Include="Valid Parentheses.cs" />
     <Compile Include="Valid Sudoku.cs" />

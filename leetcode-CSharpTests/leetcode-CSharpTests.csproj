@@ -80,6 +80,7 @@
     <Compile Include="SubstringWithConcatenationOfAllWordsTests.cs" />
     <Compile Include="SudokuSolverTests.cs" />
     <Compile Include="SwapNodesInPairsTests.cs" />
+    <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="TwoSumTests.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="ValidParenthesesTests.cs" />
