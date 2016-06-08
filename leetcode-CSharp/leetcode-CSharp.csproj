@@ -64,6 +64,7 @@
     <Compile Include="Median Of Two Sorted Arrays.cs" />
     <Compile Include="Merge k Sorted Lists.cs" />
     <Compile Include="Merge Two Sorted Lists.cs" />
+    <Compile Include="Multiply Strings.cs" />
     <Compile Include="Next Permutation.cs" />
     <Compile Include="Palindrome Number.cs" />
     <Compile Include="Program.cs" />
