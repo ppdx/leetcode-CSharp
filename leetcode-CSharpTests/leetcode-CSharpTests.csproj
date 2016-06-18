@@ -87,6 +87,7 @@
     <Compile Include="Utility.cs" />
     <Compile Include="ValidParenthesesTests.cs" />
     <Compile Include="ValidSudokuTests.cs" />
+    <Compile Include="WildcardMatchingTests.cs" />
     <Compile Include="ZigZagConversionTests.cs" />
     <Compile Include="_3SumTests.cs" />
   </ItemGroup>

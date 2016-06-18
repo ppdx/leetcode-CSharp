@@ -87,6 +87,7 @@
     <Compile Include="Two Sum.cs" />
     <Compile Include="Valid Parentheses.cs" />
     <Compile Include="Valid Sudoku.cs" />
+    <Compile Include="Wildcard Matching.cs" />
     <Compile Include="ZigZag Conversion.cs" />
   </ItemGroup>
   <ItemGroup>
