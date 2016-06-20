@@ -24,8 +24,7 @@ namespace leetcode_CSharp.Tests
 
         void T(int[] a, IList<IList<int>> r)
         {
-            Utility.AreSetEqual(r, new Permutations().Permute(a),
-                new Utility.ListEqualityComparer<int>());
+            r.AreSetEqual(new Permutations().Permute(a));
         }
     }
 }

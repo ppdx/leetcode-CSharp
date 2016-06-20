@@ -9,7 +9,7 @@ namespace leetcode_CSharp.Tests
 {
     static class Utility
     {
-        public static void AreSequenceEqual<T>(IEnumerable<T> excepted, IEnumerable<T> actual)
+        public static void AreSequenceEqual<T>(this IEnumerable<T> excepted, IEnumerable<T> actual)
         {
             if (excepted.SequenceEqual(actual))
                 return;
@@ -18,7 +18,7 @@ namespace leetcode_CSharp.Tests
                 string.Join(", ", excepted), string.Join(", ", actual)));
         }
 
-        public static void AreSetEqual<T>(IEnumerable<T> excepted, IEnumerable<T> actual,
+        public static void AreSetEqual<T>(this IEnumerable<T> excepted, IEnumerable<T> actual,
             IEqualityComparer<T> cmp)
         {
             var set1 = new HashSet<T>(excepted, cmp);
@@ -31,6 +31,17 @@ namespace leetcode_CSharp.Tests
             }
         }
 
+        public static void AreSetEqual<T>(this IEnumerable<IList<T>> excepted, IEnumerable<IList<T>> actual)
+        {
+            var set1 = new HashSet<IList<T>>(excepted, new ListEqualityComparer<T>());
+            var set2 = new HashSet<IList<T>>(actual, new ListEqualityComparer<T>());
+            if (!set1.SetEquals(actual))
+            {
+                throw new AssertFailedException(
+                    string.Format("Assert set equal failed. Excepted [{0}] Actual [{1}]",
+                    string.Join(", ", excepted), string.Join(", ", actual)));
+            }
+        }
         public class ListEqualityComparer<T> : IEqualityComparer<IList<T>>
         {
             public bool Equals(IList<T> x, IList<T> y)
