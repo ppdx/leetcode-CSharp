@@ -18,6 +18,33 @@ namespace leetcode_CSharp.Tests
                 string.Join(", ", excepted), string.Join(", ", actual)));
         }
 
+        public static void AreSetEqual<T>(IEnumerable<T> excepted, IEnumerable<T> actual,
+            IEqualityComparer<T> cmp)
+        {
+            var set1 = new HashSet<T>(excepted, cmp);
+            var set2 = new HashSet<T>(actual, cmp);
+            if (!set1.SetEquals(actual))
+            {
+                throw new AssertFailedException(
+                    string.Format("Assert set equal failed. Excepted [{0}] Actual [{1}]",
+                    string.Join(", ", excepted), string.Join(", ", actual)));
+            }
+        }
+
+        public class ListEqualityComparer<T> : IEqualityComparer<IList<T>>
+        {
+            public bool Equals(IList<T> x, IList<T> y)
+            {
+                return x.SequenceEqual(y);
+            }
+
+            public int GetHashCode(IList<T> obj)
+            {
+                return (int)obj.Select(x => (uint)x.GetHashCode())
+                               .Aggregate((u1, u2) => (u1 << 7 | u1 >> 25) ^ u2);
+            }
+        }
+
         public class ListComparer<T> : IComparer<IList<T>> where T : IComparable<T>
         {
             public int Compare(IList<T> l1, IList<T> l2)
@@ -52,5 +79,7 @@ namespace leetcode_CSharp.Tests
         {
             return llt.Sort(new ListComparer<T>());
         }
+
+
     }
 }
