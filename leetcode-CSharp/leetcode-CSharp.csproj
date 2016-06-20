@@ -68,6 +68,7 @@
     <Compile Include="Multiply Strings.cs" />
     <Compile Include="Next Permutation.cs" />
     <Compile Include="Palindrome Number.cs" />
+    <Compile Include="Permutations II.cs" />
     <Compile Include="Permutations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
