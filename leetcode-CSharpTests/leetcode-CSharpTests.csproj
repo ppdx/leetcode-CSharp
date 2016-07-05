@@ -58,6 +58,7 @@
     <Compile Include="DivideTwoIntegersTests.cs" />
     <Compile Include="FirstMissingPositiveSolutionTests.cs" />
     <Compile Include="GenerateParenthesesTests.cs" />
+    <Compile Include="GroupAnagramsSolutionTests.cs" />
     <Compile Include="ImplementStrStrTests.cs" />
     <Compile Include="JumpGameIITests.cs" />
     <Compile Include="LengthOfLongestSubstringTests.cs" />

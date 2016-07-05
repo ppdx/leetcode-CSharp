@@ -39,7 +39,8 @@ namespace leetcode_CSharp.Tests
             {
                 throw new AssertFailedException(
                     string.Format("Assert set equal failed. Excepted [{0}] Actual [{1}]",
-                    string.Join(", ", excepted), string.Join(", ", actual)));
+                    string.Join(", ", excepted.Select(e => "[" + string.Join(", ", e) + "]")),
+                    string.Join(", ", actual.Select(e => "[" + string.Join(", ", e) + "]"))));
             }
         }
         public class ListEqualityComparer<T> : IEqualityComparer<IList<T>>
@@ -52,6 +53,20 @@ namespace leetcode_CSharp.Tests
             public int GetHashCode(IList<T> obj)
             {
                 return (int)obj.Select(x => (uint)x.GetHashCode())
+                               .Aggregate((u1, u2) => (u1 << 7 | u1 >> 25) ^ u2);
+            }
+        }
+
+        public class UnorderdEqualityComparer<T> : IEqualityComparer<IEnumerable<T>>
+        {
+            public bool Equals(IEnumerable<T> x, IEnumerable<T> y)
+            {
+                return x.OrderBy(e => e).SequenceEqual(y.OrderBy(e => e));
+            }
+
+            public int GetHashCode(IEnumerable<T> obj)
+            {
+                return (int)obj.OrderBy(e => e).Select(x => (uint)x.GetHashCode())
                                .Aggregate((u1, u2) => (u1 << 7 | u1 >> 25) ^ u2);
             }
         }
