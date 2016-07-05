@@ -78,6 +78,7 @@
     <Compile Include="RemoveElementSolutionTests.cs" />
     <Compile Include="ReverseIntegerTests.cs" />
     <Compile Include="ReverseNodesInKGroupTests.cs" />
+    <Compile Include="RotateImageTests.cs" />
     <Compile Include="SearchForARangeTests.cs" />
     <Compile Include="SearchInRotatedSortedArrayTests.cs" />
     <Compile Include="SearchInsertPositionTests.cs" />

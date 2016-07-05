@@ -91,6 +91,21 @@ namespace leetcode_CSharp.Tests
             return llt.Sort(new ListComparer<T>());
         }
 
+        public static bool MultidimensionalArraysCompare<T>(T[] data1, T[] data2)
+        {
+            return data1.Rank == data2.Rank &&
+                Enumerable.Range(0, data1.Rank).All(dimension => data1.GetLength(dimension) == data2.GetLength(dimension)) &&
+                data1.Cast<double>().SequenceEqual(data2.Cast<double>());
+        }
 
+        public static bool MultidimensionalArraysCompare<T>(int[,] data1, int[,] data2)
+        {
+            return data1.GetLength(0) == data2.GetLength(0) &&
+                data1.GetLength(1) == data2.GetLength(1) &&
+                (from i in Enumerable.Range(0, data1.GetLength(0))
+                 from j in Enumerable.Range(0, data1.GetLength(1))
+                 select data1[i, j] == data2[i, j]
+                 ).All(e => e);
+        }
     }
 }

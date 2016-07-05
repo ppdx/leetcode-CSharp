@@ -79,6 +79,7 @@
     <Compile Include="Reverse Integer.cs" />
     <Compile Include="Reverse Nodes in k-Group.cs" />
     <Compile Include="Roman to Integer.cs" />
+    <Compile Include="Rotate Image.cs" />
     <Compile Include="Search for a Range.cs" />
     <Compile Include="Search in Rotated Sorted Array.cs" />
     <Compile Include="Search Insert Position.cs" />
