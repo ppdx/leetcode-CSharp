@@ -70,6 +70,7 @@
     <Compile Include="MergeTwoSortedListsTests.cs" />
     <Compile Include="Multiply StringsTests.cs" />
     <Compile Include="Next_PermutationTests.cs" />
+    <Compile Include="NQueensTests.cs" />
     <Compile Include="PalindromeNumberTests.cs" />
     <Compile Include="PermutationsIITests.cs" />
     <Compile Include="PermutationsTests.cs" />
