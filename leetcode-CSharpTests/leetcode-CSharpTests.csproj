@@ -61,6 +61,7 @@
     <Compile Include="GroupAnagramsSolutionTests.cs" />
     <Compile Include="ImplementStrStrTests.cs" />
     <Compile Include="JumpGameIITests.cs" />
+    <Compile Include="Jump_GameTests.cs" />
     <Compile Include="LengthOfLongestSubstringTests.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberTests.cs" />
     <Compile Include="LongestPalindromicSubstringTests.cs" />
