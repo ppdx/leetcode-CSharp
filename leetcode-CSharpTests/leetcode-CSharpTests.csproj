@@ -68,6 +68,7 @@
     <Compile Include="LongestValidParenthesesSolutionTests.cs" />
     <Compile Include="MaximumSubarrayTests.cs" />
     <Compile Include="MedianOfTwoSortedArraysTests.cs" />
+    <Compile Include="MergeIntervalsTests.cs" />
     <Compile Include="MergeKSortedListsTests.cs" />
     <Compile Include="MergeTwoSortedListsTests.cs" />
     <Compile Include="Multiply StringsTests.cs" />
